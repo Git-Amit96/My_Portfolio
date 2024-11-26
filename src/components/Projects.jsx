@@ -72,7 +72,7 @@ const Projects = () => {
             photo={portfolio}
             isPreview={false}
             linkPreview=""
-            linkCode=" "
+            linkCode="https://github.com/Git-Amit96/My_Portfolio.git"
           />
         </div>
       </div>
