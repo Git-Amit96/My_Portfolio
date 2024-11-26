@@ -1,0 +1,3 @@
+export const Linkdin_LOGO= "https://www.citypng.com/public/uploads/preview/hd-black-round-outline-linkedin-in-icon-symbol-png-70175169504571127bsekilz0.png";
+export const Github_LOGO= "https://w7.pngwing.com/pngs/646/324/png-transparent-github-computer-icons-github-logo-monochrome-head-thumbnail.png";
+export const Netflix_Picture= "https://upload.wikimedia.org/wikipedia/en/3/3c/Netflix_UI_for_Web.png";
