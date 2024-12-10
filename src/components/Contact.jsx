@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import { motion } from "motion/react";
+const serverKey = process.env.REACT_APP_SERVER_KEY;
+const templateKey = process.env.REACT_APP_TEMPLATE_KEY;
+const publicKey = process.env.REACT_APP_PUBLIC_KEY;
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
@@ -9,10 +12,6 @@ const ContactForm = () => {
     email_id: "",
     message: "",
   });
-
-  const server_key = "a";
-  const template_key = "a";
-  const public_key = "a";
 
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(false);
@@ -24,23 +23,21 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .send({ server_key }, { template_key }, formData, { public_key })
-      .then(
-        () => {
-          setSuccess(true);
-          setError(false);
-          setFormData({
-            to_name: "Amit Saini",
-            from_name: "",
-            email_id: "",
-            message: "",
-          });
-        },
-        () => {
-          setError(true);
-        }
-      );
+    emailjs.send(serverKey, templateKey, formData, publicKey).then(
+      () => {
+        setSuccess(true);
+        setError(false);
+        setFormData({
+          to_name: "Amit Saini",
+          from_name: "",
+          email_id: "",
+          message: "",
+        });
+      },
+      () => {
+        setError(true);
+      }
+    );
   };
 
   return (
