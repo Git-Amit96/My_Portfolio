@@ -15,12 +15,10 @@ const About = () => {
         className="container mx-auto flex justify-center text-center max-w-[1000px] items-center py-10 px-6 "
       >
         <p className="text-[20px] sm:text-[25px] md:text-[30px] lg:text-[35px] leading-relaxed">
-          👋 Hii, I am Amit Saini, a results-oriented Web Developer skilled in
+          👋 Hii, I am Amit Saini, a results-oriented Full Stack Web Developer using <span className="text-newPurple">MERN</span> skilled in
           creating responsive and dynamic frontends utilizing{" "}
-          <span className="text-newPurple">React, JavaScript, HTML,</span> and{" "}
-          <span className="text-newPurple">Tailwind CSS</span>. Proficient in{" "}
-          <span className="text-newPurple">FULL-STACK DEVELOPMENT</span> with a
-          firm grasp of{" "}
+          <span className="text-newPurple">React, JavaScript, Redux, HTML,</span> and{" "}
+          <span className="text-newPurple">Tailwind CSS</span>{" "} and Scalable Backends using {" "}
           <span className="text-newPurple">Node.js, Express.js, MongoDB</span>,
           ensuring smooth integration between{" "}
           <span className="text-yellow-600">FRONT-END</span> and{" "}

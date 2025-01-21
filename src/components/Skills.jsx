@@ -21,7 +21,7 @@ const Skills = () => {
       </div>
       <div className="container mx-auto flex flex-col md:flex-row md:flex-wrap justify-center gap-4 items-center max-w-[1300px] py-6 px-4 sm:px-6 text-white space-y-6 md:space-y-0">
         {/** Card 1: Front-end Development */}
-        <div className="w-full sm:w-[350px] h-auto md:h-[200px] rounded-md border border-gray-300 hover:scale-105 transition-transform duration-500 text-black px-4 py-6 hover:bg-neon">
+        <div className="w-full sm:w-[350px] h-auto md:h-[200px] rounded-md border border-gray-300 hover:scale-105 transition-all duration-500 text-black px-4 py-6 hover:bg-neon">
           <h1 className="text-center text-[20px] md:text-[22px] font-bold">
             Front-end Development
           </h1>
@@ -48,7 +48,7 @@ const Skills = () => {
         </div>
 
         {/** Card 2: Back-end Development */}
-        <div className="w-full sm:w-[350px] h-auto md:h-[200px] rounded-md border border-gray-300 hover:scale-105 transition-transform duration-500 text-black px-4 py-6 hover:bg-neon">
+        <div className="w-full sm:w-[350px] h-auto md:h-[200px] rounded-md border border-gray-300 hover:scale-105 transition-all duration-500 text-black px-4 py-6 hover:bg-neon">
           <h1 className="text-center text-[20px] md:text-[22px] font-bold">
             Back-end Development
           </h1>
@@ -69,7 +69,7 @@ const Skills = () => {
         </div>
 
         {/** Card 3: Database Management */}
-        <div className="w-full sm:w-[350px] h-auto md:h-[200px] rounded-md border border-gray-300 hover:scale-105 transition-transform duration-500 text-black px-4 py-6 hover:bg-neon">
+        <div className="w-full sm:w-[350px] h-auto md:h-[200px] rounded-md border border-gray-300 hover:scale-105 transition-all duration-500 text-black px-4 py-6 hover:bg-neon">
           <h1 className="text-center text-[20px] md:text-[22px] font-bold">
             Database Management
           </h1>
@@ -90,7 +90,7 @@ const Skills = () => {
         </div>
 
         {/** Card 4: Languages */}
-        <div className="w-full sm:w-[350px] h-auto md:h-[200px] rounded-md border border-gray-300 hover:scale-105 transition-transform duration-500 text-black px-4 py-6 hover:bg-neon">
+        <div className="w-full sm:w-[350px] h-auto md:h-[200px] rounded-md border border-gray-300 hover:scale-105 transition-all duration-500 text-black px-4 py-6 hover:bg-neon">
           <h1 className="text-center text-[20px] md:text-[22px] font-bold">
             Languages
           </h1>
@@ -111,7 +111,7 @@ const Skills = () => {
         </div>
 
         {/** Card 5: Additional */}
-        <div className="w-full sm:w-[350px] h-auto md:h-[200px] rounded-md border border-gray-300 hover:scale-105 transition-transform duration-500 text-black px-4 py-6 hover:bg-neon">
+        <div className="w-full sm:w-[350px] h-auto md:h-[200px] rounded-md border border-gray-300 hover:scale-105 transition-all duration-500 text-black px-4 py-6 hover:bg-neon">
           <h1 className="text-center text-[20px] md:text-[22px] font-bold">
             Additional
           </h1>
@@ -127,6 +127,9 @@ const Skills = () => {
             </span>
             <span className="px-3 py-1 text-xs font-semibold bg-yellow-100 text-yellow-700 rounded-full">
               DSA
+            </span>
+            <span className="px-3 py-1 text-xs font-semibold bg-yellow-100 text-yellow-700 rounded-full">
+              Postman
             </span>
           </div>
         </div>

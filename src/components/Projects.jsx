@@ -1,10 +1,11 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import photo from "../utils/Netflix.png";
+import collab from "../utils/Collab.png";
 import swiggy from "../utils/Swiggy.png";
 import youtube from "../utils/Youtube.png";
 import portfolio from "../utils/Portfolio.png";
-import airbnb from "../utils/Airbnb.png";
+import recipe from "../utils/Recipe.png";
 
 const Projects = () => {
   return (
@@ -22,6 +23,38 @@ const Projects = () => {
           </h1>
         </div>
         <div className="flex flex-wrap gap-4 justify-center">
+          {/* Collab App Card */}
+          <ProjectCard
+            title="Collab App"
+            summary="A Full Stack Collaborating Task Managing App built in MERN Stack. It features responsive design, share tasks with other users, manage Tasks and keep tracking activities related to task. "
+            tech={[
+              "Node.js",
+              "Express.js",
+              "React.js",
+              "MongoDB Atlas",
+              "Authentication",
+              "Redux",
+              "Tailwind CSS",
+              "Postman",
+              "Micro Services",
+            ]}
+            photo={collab}
+            isPreview={true}
+            linkPreview="https://mellow-frangipane-e24486.netlify.app"
+            linkCode="https://github.com/Git-Amit96/To-Do-App.git"
+          />
+          {/* Recipe Book App Card */}
+          <ProjectCard
+            title="Recipe Book App"
+            summary="A fully responsive Recipe Book app built with React, featuring dynamic recipes listings, interactive search, and seamless navigation for a user-friendly experience."
+            tech={["React", "API", "Spoonacular API", "JavaScript", "Tailwind", "HTML"]}
+            photo={recipe}
+            isPreview={true}
+            linkPreview="https://hunger-bell.netlify.app/"
+            linkCode="https://github.com/Git-Amit96/Recipe-Book.git"
+          />
+
+          {/* Netflix App Card */}
           <ProjectCard
             title="Netflix Website"
             summary="A dynamic movie-streaming web app built with React, utilizing TMDB API for fetching and displaying movies. It features responsive design, seamless navigation, and a visually appealing UI."
@@ -38,6 +71,8 @@ const Projects = () => {
             linkPreview="https://netflixgpt-bd4b9.web.app/"
             linkCode="https://github.com/Git-Amit96/Netflix-GPT.git"
           />
+
+          {/* Swiggy App Card */}
           <ProjectCard
             title="Food Ordering Website"
             summary="A food delivery app replica built with React, showcasing responsive design, dynamic restaurant listings, and a cart system for smooth user interactions."
@@ -47,6 +82,8 @@ const Projects = () => {
             linkPreview=""
             linkCode="https://github.com/Git-Amit96/Food_Ordering_Website.git"
           />
+
+          {/* Youtube App Card */}
           <ProjectCard
             title="Youtube Player"
             summary="A video streaming platform replica created using React, featuring video search, dynamic video rendering, and responsive design for an engaging user experience."
@@ -56,15 +93,8 @@ const Projects = () => {
             linkPreview=""
             linkCode="https://github.com/Git-Amit96/Food_Ordering_Website.git"
           />
-          <ProjectCard
-            title="Airbnb Website"
-            summary="A fully responsive rental booking platform built with React, featuring dynamic property listings, interactive search, and seamless navigation for a user-friendly experience."
-            tech={["Node.js", "Express.js", "React", "JavaScript"]}
-            photo={airbnb}
-            isPreview={false}
-            linkPreview=""
-            linkCode="https://github.com/Git-Amit96/My_Airbnb_Clone.git"
-          />
+
+          {/* Portfolio App Card */}
           <ProjectCard
             title="Portfolio"
             summary="A personal portfolio website showcasing my skills, projects, and knowledge. Built with React and Tailwind CSS, it delivers a visually appealing and responsive design."
